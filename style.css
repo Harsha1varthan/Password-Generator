@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --BG-COLORONE: rgb(26, 231, 26);
+    --BG-COLORTWO: rgb(10, 197, 197);
+    --FONTSIZE   : 1.25rem;
+}
+body{
+    display: grid;
+    place-content: center center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    font-size: var(--FONTSIZE);
+
+}
+h1{
+    display: block;
+    justify-self: center;
+    margin-bottom: 1rem;
+}
+.box{
+    color: var(--BG-COLORONE);
+    box-shadow: 2px 2px 6px 6px var(--BG-COLORONE);
+    line-height: 3rem;
+    padding: 2em;
+    display: grid;
+    border-radius: 30px;
+}
+fieldset{
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 3rem;
+    padding: 1em;
+}
+#result__container{
+    display: flex;
+    border: 1px solid #fff;
+    align-items: center;
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+input{
+    position: relative;
+    flex-grow: 2;
+    padding: 0.75em;
+    border-radius: 30px;
+    font-size: 1.25rem;
+    background: transparent;
+    color: var(--BG-COLORONE);
+    overflow-x: visible;
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: fit-content;
+    padding: 0.35em;
+    background-color: var(--BG-COLORONE);
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.box{
+    position: relative;
+}
+#copy{
+    position: absolute;
+    right: 12%;
+    font-size: 1.4rem;
+}
+#generate{
+    justify-self: center;
+    margin-top: 10%;
+}
+.Numbers{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+}
+
+
+
+.Symbols{
+    display: flex;
+    width: 50%;
+}
+
+.length__container{
+    display: flex;
+    justify-content: space-between;
+}
+#toggled{
+    position: relative;
+    width: 35%;
+    background-color: #2e2e2e;
+    border-radius: 100px;
+    padding: 0.65em;
+}
+#toggled::before{
+    position: absolute;
+    content: '';
+    width: 2%;
+    background-color: var(--BG-COLORONE);
+    padding: 0.5em;
+    border-radius: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%)
+}
+#toggled.change::before{
+    left: calc(100% - 24px);
+    background-color: var(--BG-COLORTWO)
+
+}
+#upperMost{
+    display: flex;
+    justify-content: space-between;
+}
+
+body.change{
+    background-color: #000;
+}
+.box.change{
+    color: var(--BG-COLORTWO);
+    box-shadow: 2px 2px 6px 6px var(--BG-COLORTWO);
+}
+#generate.change{
+    background-color: var(--BG-COLORTWO);
+}
+
+#copy.change{
+    background-color: var(--BG-COLORTWO)
+}
+#result.change{
+    color: var(--BG-COLORTWO)
+}

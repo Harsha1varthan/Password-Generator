@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Password Generator</title>
+    <script src = "index.js" defer > </script>
+</head>
+<body id = "body-el">
+    
+    </label>
+    <div class="box">
+        <div id = "upperMost">
+            <button id = "toggled"></button>
+            <p id = "copy-el"></p>
+        </div>
+        <h1>Password Generator</h1>
+        <div id = "result__container">
+            <input type = "text" id = "result" for = "result" placeholder="123456">
+            <button id = "copy">Copy</button>
+        </div>
+        <fieldset>
+            <legend id = "show">Password Attributes</legend>
+            <label>
+                Password Length
+            </label>
+            <div class = "length__container">
+                <input type = "range" id = "length" min = "4" max = "20" >
+                <div>
+                    <p id = "range-value"></p>
+                </div>
+                
+            </div>
+           <div class = "Numbers">
+            <label>
+                Include Numbers
+            </label>
+            <input type = "checkbox" id = "numbers" checked>
+           </div>
+            <div class = "Symbols">
+                <label>
+                    Include Symbols
+                </label>
+                <input type = "checkbox" id = "symbols" checked>
+            </div>
+           
+        </fieldset>
+        <button id = "generate"> Generate Password </button>
+        
+    </div>
+    
+</body>
+</html>
